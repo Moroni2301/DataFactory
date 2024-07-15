@@ -374,6 +374,26 @@
 							"referenceName": "AzureDatabricks_datafactory",
 							"type": "LinkedServiceReference"
 						}
+					},
+					{
+						"name": "Plata a ORO",
+						"type": "DatabricksNotebook",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "0.12:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"notebookPath": "/Users/emfl_2301@hotmail.com/Capa ORO"
+						},
+						"linkedServiceName": {
+							"referenceName": "AzureDatabricks2",
+							"type": "LinkedServiceReference"
+						}
 					}
 				],
 				"policy": {
@@ -382,7 +402,8 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureDatabricks_datafactory')]"
+				"[concat(variables('factoryId'), '/linkedServices/AzureDatabricks_datafactory')]",
+				"[concat(variables('factoryId'), '/linkedServices/AzureDatabricks2')]"
 			]
 		},
 		{
