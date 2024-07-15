@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Notebook1",
+				"name": "Bronce_A_Plata",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -13,7 +13,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/emfl_2301@hotmail.com/Capa Plata"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks_datafactory",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
