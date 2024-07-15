@@ -1,0 +1,9 @@
+{
+	"name": "moronifuero-dtfactory2",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "721f30c5-540d-43f6-ae68-a52ca174247c",
+		"tenantId": "f5197efd-3bcf-41ff-b58f-21fe890766bb"
+	}
+}
