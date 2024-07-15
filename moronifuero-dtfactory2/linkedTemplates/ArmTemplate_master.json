@@ -11,9 +11,33 @@
 			"type": "secureString",
 			"metadata": "Cadena protegida para \"accountKey\"de \"LINK_ADLS_DataFactory\""
 		},
+		"AzureDatabricks1_accessToken": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"accessToken\"de \"AzureDatabricks1\""
+		},
+		"AzureDatabricks2_accessToken": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"accessToken\"de \"AzureDatabricks2\""
+		},
+		"AzureDatabricks_datafactory_accessToken": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"accessToken\"de \"AzureDatabricks_datafactory\""
+		},
 		"LINK_ADLS_DataFactory_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://moronifuero2301.dfs.core.windows.net/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "proyecto final cluster"
+		},
+		"AzureDatabricks2_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0715-033501-hhhrh44t"
+		},
+		"AzureDatabricks_datafactory_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0715-033501-hhhrh44t"
 		},
 		"containerUri": {
 			"type": "string",
@@ -45,8 +69,26 @@
 					"LINK_ADLS_DataFactory_accountKey": {
 						"value": "[parameters('LINK_ADLS_DataFactory_accountKey')]"
 					},
+					"AzureDatabricks1_accessToken": {
+						"value": "[parameters('AzureDatabricks1_accessToken')]"
+					},
+					"AzureDatabricks2_accessToken": {
+						"value": "[parameters('AzureDatabricks2_accessToken')]"
+					},
+					"AzureDatabricks_datafactory_accessToken": {
+						"value": "[parameters('AzureDatabricks_datafactory_accessToken')]"
+					},
 					"LINK_ADLS_DataFactory_properties_typeProperties_url": {
 						"value": "[parameters('LINK_ADLS_DataFactory_properties_typeProperties_url')]"
+					},
+					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
+					},
+					"AzureDatabricks2_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks2_properties_typeProperties_existingClusterId')]"
+					},
+					"AzureDatabricks_datafactory_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks_datafactory_properties_typeProperties_existingClusterId')]"
 					}
 				}
 			},

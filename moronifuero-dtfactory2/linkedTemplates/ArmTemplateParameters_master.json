@@ -8,8 +8,26 @@
 		"LINK_ADLS_DataFactory_accountKey": {
 			"value": ""
 		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricks2_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricks_datafactory_accessToken": {
+			"value": ""
+		},
 		"LINK_ADLS_DataFactory_properties_typeProperties_url": {
 			"value": "https://moronifuero2301.dfs.core.windows.net/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "proyecto final cluster"
+		},
+		"AzureDatabricks2_properties_typeProperties_existingClusterId": {
+			"value": "0715-033501-hhhrh44t"
+		},
+		"AzureDatabricks_datafactory_properties_typeProperties_existingClusterId": {
+			"value": "0715-033501-hhhrh44t"
 		},
 		"containerUri": {
 			"value": ""
